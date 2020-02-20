@@ -1,0 +1,120 @@
+/* CSS Reference from W3School: https://www.w3schools.com/cssref/ */
+
+/* Example Variables */
+:root {
+	/* Fonts */
+	--main-font-primary: "Roboto", sans-serif;
+	--main-font-secondary: "Montserrat", sans-serif;
+	--main-font-tertiary: "Comfortaa", cursive;
+	/* Colors */
+	--main-color-gray: #485359;
+	--main-color-white: #e9f0f2;
+	--main-color-black: #0d0d0d;
+	--main-color-light: #5ef2ad;
+	--main-color-dark: #45735d;
+	--main-color-light2: #f38888;
+	--main-color-dark2: #d27575;
+	--main-color-light3: #a0d3f2;
+	--main-color-dark3: #769bb3;
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+} 
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--main-font-prinary);
+    color: var(--main-color-black);
+}
+
+p{
+    font-family: var{--main-font-secondary);
+    color: var(--main-color-black); 
+}
+    
+.text_highlight{
+    font-family: var(--main-font-tertiary);
+    color: var(--main-color-light3);
+}
+    
+#sec_lan{
+    height: 200vh;
+    background-color: var(--main-color-white);
+    }
+
+#sec_lan_header h1,
+#sec_lan_header span,
+#sec_lan_sec1 h2,
+#sec_lan_sec1 span{
+    display: none;
+}
+/* unvisited link*/
+    #sec_lan a:link{
+        color: var(--main-color-light2);
+    }
+    
+    
+/*visited link*/
+    #sec_lan a:visited{
+        color: var(--main-color-light2);
+    }
+
+/* Mouse over link - hover */
+    #sec_lan a:hover{
+        color: var(--main-color-dark2);
+    }
+    
+/* selected link */
+    #sec_lan a:active{
+        color: var(--main-color-dark2);
+    }
+    
+/* unvisited link */
+    #sec-lan a.btn-primary:link{
+        color:var(--main-color-white);
+        background-color: var(--main-color-light2);
+        border-color: var(--main-color-light2);
+        box-shadow: none; 
+    }
+    
+    #sec-lan a.btn-primary:visited{
+        color:var(--main-color-white);
+        background-color: var(--main-color-light2);
+        border-color: var(--main-color-light2);
+        box-shadow: none; 
+    }
+    #sec-lan a.btn-primary:hover{
+        color:var(--main-color-white);
+        background-color: var(--main-color-dark2);
+        border-color: var(--main-color-dark2);
+        box-shadow: none; 
+    }
+    
+    #sec-lan a.btn-primary:active{
+        color:var(--main-color-white);
+        background-color: var(--main-color-dark2);
+        border-color: var(--main-color-dark2);
+        box-shadow: none; 
+    }
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
