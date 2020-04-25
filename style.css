@@ -6,11 +6,11 @@ body {
     color:aliceblue;
     background-color:white;
     background-image: url("img/leaves.jpg");
-    background-size: 100%;
+    background-size: 100% 30em;
     background-repeat: no-repeat;
     background-position: top;
     background-attachment: scroll;
-    font-family: 'revilo san', san-serif;
+    font-family: 'revilo san', Tahoma, Geneva, sans-serif;
 }
 
 div {
@@ -24,9 +24,11 @@ h2{
     padding:10px;
 }
 
-h3{}
+h3{
+}
 
 p {
+  background-color:white;
   height: 150px ;
   min-height: ;
   max-height: ;
@@ -61,7 +63,7 @@ p {
 
 .form-group{
     margin: 50px;
-    border: 5px solid lightslategrey;
+    border: 3px solid lightslategrey;
     padding: 10px;
     align-items: center;
     align-content: space-around;
@@ -73,6 +75,8 @@ p {
 .submit{
     margin-top: 10px;
 }
-
+.about{
+    
+}
 
 
