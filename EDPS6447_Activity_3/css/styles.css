@@ -1,0 +1,42 @@
+* {
+	font-family: "Montserrat", sans-serif;
+}
+body {
+	background: rgb(255, 255, 255);
+	background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(204, 204, 204, 1) 100%);
+}
+div.card,
+div.alert-warning {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.card-header {
+	text-align: center;
+}
+
+
+/*mine*/
+#container{
+	padding: 10px;
+}
+#myVideo, #text_statement, #form-check-input{
+	padding: 10px;
+	width: 100%;
+}
+#playButtons
+{
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#nextButtons{
+	text-align: right;}
+
+#vidNum{
+	float: right;
+}
+#iframe_video{
+	text-align: center;
+}
+/*END MINE*/

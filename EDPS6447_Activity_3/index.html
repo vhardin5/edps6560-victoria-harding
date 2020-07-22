@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+
+		<!-- Font Awesome -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+
+		<!-- Quizzlet Stylesheet -->
+		<link href="css/styles.css" rel="stylesheet" />
+
+		<title>VH EDPS 6446 Proj #3</title>
+	</head>
+	<body>
+		<div class="container-fluid" style="height: 100vh;">
+			<div class="row justify-content-center align-items-center h-100">
+				<div id="sec_landing" class="col-8 col-md-6 col-lg-4 d-none">
+					<div class="card">
+						<div class="card-header">A QUIET PLACE TO QUIZ</div>
+						<div class="card-body">
+							<form>
+								<label for="input_username">Enter your username: </label>
+								<input id="input_username" class="form-control" type="text" placeholder="Abbott">
+							</form>
+							<button id="btn_start" type="button" class="btn btn-secondary w-100 mt-3">Start</i></button>
+							<button id="btn_tutorial" type="button" class="btn btn-secondary w-100 mt-1" disabled>Tutorial</i></button>
+						</div>
+					</div>
+				</div>
+				<div id="sec_quiz" class="col-10 col-md-8 col-lg-6 d-none">
+					<div class="card">
+						<div class="card-header">A QUIET PLACE TO QUIZ</div>
+						<div class="card-body">
+							<!--VIDEO -->
+							<iframe id="iframe_video" style="margin-left: : auto; margin-right: auto; margin-bottom: 10px; display: none;" width="60%" height="350" src="https://www.youtube.com/embed/ebLxWffaQF4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<!--END VIDEO-->
+							<p class="font-weight-bold">After viewing the video, test your knowledge by reading the statement carefully and select your answer from one of the options below.</p>
+							<p id="text_statement" class="font-italic">The type of grain in the silo is corn.</p>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="quizzlet_input" id="input_1" value="option1" checked />
+								<label class="form-check-label" for="input_1">True</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="quizzlet_input" id="input_2" value="option2" />
+								<label class="form-check-label" for="input_2">False</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="quizzlet_input" id="input_3" value="option3"  />
+								<label class="form-check-label" for="input_3">Maybe</label>
+							</div>
+							<div id="cont_success" class="alert alert-success d-none" role="alert">
+								Your answer is correct.
+							</div>
+							<div id="cont_danger" class="alert alert-danger d-none" role="alert">
+								Your answer is incorrect.
+							</div>
+						</div>
+						<div class="card-footer">
+							<div class="d-flex justify-content-between">
+								<button id="btn_submit" type="button" class="btn btn-secondary">Submit</button>
+								<div>
+									<span id="text_question_id">1</span> of <span id="text_question_total">1</span
+									><span class="ml-3 mr-3">|</span><span id="text_question_correct">0</span
+									><i class="fas fa-thumbs-up ml-1 mr-2"></i><span id="text_question_incorrect">0</span
+									><i class="fas fa-thumbs-down ml-1 mr-2"></i>
+								</div>
+								<div class="btn-group" role="group" aria-label="Basic example">
+									<button id="btn_previous" type="button" class="btn btn-secondary" disabled>
+										<i class="fas fa-chevron-left"></i>
+									</button>
+									<button id="btn_hint" type="button" class="btn btn-secondary">
+										<i class="fas fa-question"></i>
+									</button>
+									<button id="btn_help" type="button" class="btn btn-secondary">
+									<i class="fas fa-info"></i>
+									<button id="btn_next" type="button" class="btn btn-secondary"><i class="fas fa-chevron-right"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="alert alert-warning mt-3">
+						<span><i class="fas fa-running mb-3"></i> Shh...</span>
+						<p id="text_agent_dialogue">
+							Rule #1: Don't make a sound. Rule #2: Never leave the path. Rule #3: Red means run.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+		<script src="js/variable.js"></script>
+		<script src="js/data.js"></script>
+		<script src="js/listener.js"></script>
+		<script src="js/controller.js"></script>
+	</body>
+</html>
